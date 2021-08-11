@@ -6,7 +6,7 @@ To use this project locally you must have [python](https://www.python.org/downlo
 
 1. **Clone the repository:**
     ```sh
-    git clone -b main https://github.com/obanlatomiwa/data_wrangling_exercise.git
+    git clone -b main https://github.com/hballow2008/wrangling-and-sorting-data-using-python.git
     ```
 2. **Setup the virtual environment by running:**
     ```sh
@@ -26,15 +26,3 @@ To use this project locally you must have [python](https://www.python.org/downlo
     ```sh
     python road_safety_in_europe/scripts/webscrapping_from_wikipedia.py
     ```
-
-## Scripts
-
-### Get European Union Road Safety Facts and Figures
-Located at [road_safety_in_europe/scripts/webscrapping_from_wikipedia.py](road_safety_in_europe/scripts/webscrapping_from_wikipedia.py), 
-this scripts scraps data from the European Union Road Safety Facts and Figures table from wikipedia [https://en.wikipedia.org/wiki/Road_safety_in_Europe](https://en.wikipedia.org/wiki/Road_safety_in_Europe).
-
-## Data
-The script result and required result is saved and located in this folder with the name "result.csv".
-The wikipedia data is saved and located in the sub-folder named raw. The data is named "wikipedia_extracted_data.csv".
-
-My Tabular Data Package is located at [https://github.com/obanlatomiwa/data_wrangling_exercise/blob/main/road_safety_in_europe/datapackage.json](https://github.com/obanlatomiwa/data_wrangling_exercise/blob/main/road_safety_in_europe/datapackage.json).
