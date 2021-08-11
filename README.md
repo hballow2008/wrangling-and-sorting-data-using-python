@@ -6,7 +6,7 @@ To use this project locally you must have [python](https://www.python.org/downlo
 
 1. **Clone the repository:**
     ```sh
-    git clone -b main https://github.com/hballow2008/wrangling-and-sorting-data-using-python.git
+    git clone https://github.com/hballow2008/wrangling-and-sorting-data-using-python.git
     ```
 2. **Setup the virtual environment by running:**
     ```sh
