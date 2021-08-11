@@ -3,7 +3,7 @@
   "resources": [
     {
       "name": "result.csv",
-      "path": "https://github.com/obanlatomiwa/data_wrangling_exercise/blob/main/road_safety_in_europe/data/result.csv",
+      "path": "https://github.com/hballow2008/wrangling-and-sorting-data-using-python/blob/master/road_safety_in_europe/data/result.csv",
       "profile": "tabular-data-resource",
       "schema": {
         "fields": [
@@ -68,7 +68,7 @@
     },
     {
       "name": "wikipedia_extracted_data.csv",
-      "path": "https://github.com/obanlatomiwa/data_wrangling_exercise/blob/main/road_safety_in_europe/data/raw/wikipedia_extracted_data.csv",
+      "path": "https://github.com/hballow2008/wrangling-and-sorting-data-using-python/blob/master/road_safety_in_europe/data/raw/wikipedia_extracted_data.csv",
       "profile": "tabular-data-resource",
       "schema": {
         "fields": [
@@ -144,18 +144,12 @@
   ],
   "name": "european_union_road_safety_facts_and_figures",
   "title": "European Union Road Safety Facts and Figures",
-  "description": "A collection of scrapped data from Wikipedia on European Union Road Safety Facts and Figures and clean data result datasets.",
-  "homepage": "https://github.com/obanlatomiwa/data_wrangling_exercise",
+  "description": "A collection of sampled data from Wikipedia on European Union Road Safety Facts and Figures and clean data result datasets.",
+  "homepage": "https://github.com/hballow2008/wrangling-and-sorting-data-using-python",
   "licenses": [
     {
-      "path": "https://github.com/obanlatomiwa/data_wrangling_exercise/blob/main/LICENSE",
+      "path": "https://github.com/hballow2008/wrangling-and-sorting-data-using-python/blob/master/LICENSE",
       "title": "MIT"
-    }
-  ],
-  "contributors": [
-    {
-      "title": "Tomiwa Obanla",
-      "role": "author"
     }
   ]
 }
