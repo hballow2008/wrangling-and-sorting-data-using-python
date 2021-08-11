@@ -16,14 +16,12 @@ def webscrapping_from_wikipedia():
     # wikipedia url
     wikipedia_url = "https://en.wikipedia.org/wiki/Road_safety_in_Europe"
 
-    # get the table class by inspecting the table on your web browser
+    # getting the table class by inspecting the table on your web browser
     table_class = "wikitable sortable"
     response = requests.get(wikipedia_url)
     print("Response from Wikipedia", response.status_code)
 
-    # response.status_code returns 200
-
-    # now we can get parse the data from the html by passing the html tag in this case <table>
+    # to get parse the data from the html by passing the html tag in this case <table>
     # and the particular table class
     wiki_data = BeautifulSoup(response.text, 'html.parser')
     result = wiki_data.find('table', {'class': table_class})
@@ -42,16 +40,12 @@ def webscrapping_from_wikipedia():
     df.to_csv(file_path)
 
     # STEP 2
-    # clean dataset
-    # Resulting CSV file should only include the following columns: Country, Year, Area, Population, GDP per capita,
-    # Population density, Vehicle ownership, Total road deaths, Road deaths per Million Inhabitants.
-    # Note that “Year” column value is always 2018.
-
+    # cleaning the dataset, Resulting CSV file should only include the following columns: Country, Year, Area, Population, GDP per capita, Population density, Vehicle ownership, Total road deaths, Road deaths per Million Inhabitants.
     # drop unwanted columns
     data = df.drop(["Road Network Length (in km) in 2013[29]", "Number of People Killed per Billion km[30]",
                     "Number of Seriously Injured in 2017/2018[30]"], axis=1)
 
-    # rename columns
+    # rename the columns
     data = data.rename(columns={"Area (thousands of km2)[24]": "Area",
                                 "Population in 2018[25]": "Population",
                                 "GDP per capita in 2018[26]": "GDP per capita",
